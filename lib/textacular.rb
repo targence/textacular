@@ -152,8 +152,8 @@ module Textacular
     rank = connection.quote_column_name('rank' + rand(100000000000000000).to_s)
 
     select("#{quoted_table_name + '.*,' if select_values.empty?} #{similarities.join(" + ")} AS #{rank}").
-      where(conditions.join(exclusive ? " AND " : " OR ")).
-      order("#{rank} DESC")
+      where(conditions.join(exclusive ? " AND " : " OR ")) #.
+    #  order("#{rank} DESC")
   end
 
   def select_values
