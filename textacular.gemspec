@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
     ActiveRecord with scopes making search easy and fun!'
 
   s.license  = 'MIT'
-  s.authors  = ['Ben Hamill', 'ecin', 'Aaron Patterson']
+  s.authors  = ['Ben Hamill', 'ecin', 'Aaron Patterson', 'Greg Molnar']
   s.email    = ['git-commits@benhamill.com', 'ecin@copypastel.com']
   s.homepage = 'http://textacular.github.com/textacular'
 
@@ -63,5 +63,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-doc'
 
-  s.add_dependency('activerecord', [">= 3.0", "< 5.0"])
+  s.add_dependency('activerecord', [">= 3.0", "<= 5.0"])
 end
